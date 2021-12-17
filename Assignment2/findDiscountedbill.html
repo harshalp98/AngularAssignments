@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function findDiscountedbill(billamount)
+        {
+            if(billamount<10000)
+            {
+                var discountedbill=billamount-(billamount*0.05);
+                document.write(discountedbill);
+            }
+            else if(billamount>10000 && billamount<20000)
+            {
+                var discountedbill=billamount-(billamount*0.10);
+                document.write(discountedbill);
+            }
+            else if(billamount>20000 && billamount<30000)
+            {
+                var discountedbill=billamount-(billamount*0.15);
+                document.write(discountedbill);
+            }
+            else if(billamount>30000)
+            {
+                var discountedbill=billamount-(billamount*0.25);
+                document.write(discountedbill);
+            }
+        }
+        var am=parseFloat(prompt("Enter billamount"));
+        findDiscountedbill(am);
+
+    </script>
+</body>
+</html>
