@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=10;
+        var b=5;
+        var c=7;
+        var s="";
+        if(a<b && a<c)
+        {
+            if(b<c)
+            {
+                s=s+a+','+b+','+c;
+            }
+            else
+            {
+                s=s+a+','+c+','+b;
+            }
+        }
+        else if(b<a && b<c)
+        {
+            if(a<c)
+            {
+                s=s+b+','+a+','+c;
+            }
+            else
+            {
+                s=s+b+','+c+','+a;
+            }
+        }
+        else if(c<b && c<a)
+        {
+            if(b<a)
+            {
+                s=s+c+','+b+','+a;
+            }
+            else
+            {
+                s=s+c+','+a+','+b;
+            }
+        }
+        alert(s);
+
+
+
+    </script>
+</body>
+</html>

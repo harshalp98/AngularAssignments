@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var n=prompt();
+    var s="";
+
+    function fn(n){
+        var arr=n.split("");
+    for(var i=0;i<arr.length;i++)
+    {
+        var j=i+1;
+
+        if(arr[i]%2==0 && arr[j]%2==0)
+        {
+            s=s+arr[i]+"*";
+        }
+        else 
+            s=s+arr[i];
+
+    }
+    return s;
+
+    }
+    document.write(fn(n));
+
+
+    </script>
+</body>
+</html>

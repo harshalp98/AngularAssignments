@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <table>
+        <caption>Employee Registration Form</caption>
+        <tr>
+        <th><lable>Enter Employee Name:</lable></th>
+        <td><input  id="one" type="text" name="empName" required placeholder="Enter Full Name"/></td>
+        </tr>
+        
+        <tr>
+        <th><lable>Enter Employee Id:</lable></th>
+        <td><input id="two" type="tel" name="empId" required pattern="[0-9]{6}"/></td>
+        </tr>
+        
+        <tr>
+        <th><lable>Joining Date:</lable></th>
+        <td><input id="three" type="date" name="ejd" required/></td>
+        </tr>
+        
+        <tr>
+        <th><lable>Email:</lable></th>
+        <td><input id="four" type="email" name="eemail" required placeholder="Enter Valid Email"/></td>
+        </tr>
+        
+        <tr>
+        <th><lable>Mobile No:</lable></th>
+        <td><input id="five" type="tel" name="emNo" required pattern="[0-9]{10}"/></td>
+        </tr>
+        
+        <tr>
+        <th><lable>Gender:</lable></th>
+        <td><input id="six" type="radio" name="gender" value="male"/>Male
+            <input id="six" type="radio" name="gender" value="female"/>Female
+        </td>
+        </tr>
+        
+        <tr>
+        <th><lable>DOB</lable></th>
+        <td><input id="seven" type="date" name="dob"/></td>
+        </tr>
+        
+        <tr>
+        <th><lable>Designation:</lable></th>
+
+        <td><select id="eight" name="">
+            <option  value="se">SE</option>
+            <option  value="te">TE</option>
+            <option  value="qa">QA</option>
+            <option  value="ba">BA</option>
+        </td>
+        </tr>
+        
+        <tr>
+        <th><lable>Department:</lable></th>
+        <td><input id="nine" type="text" name="dept" required/></td>
+        </tr>
+        <tr>
+            <th><label>Do You Have Passport</label></th>
+            <td><input id="ten" type="checkbox" name="result" value="yes"></td>
+        </tr>
+
+        <tr>
+        <th><lable>Upload Doc:</lable></th>
+        <td><input type="file" name="doc"/></td>
+        </tr>
+        
+        <tr>
+        <td></td>
+        <td><input type="submit" onclick="display(event)"/>
+        <input type="reset"/></td>
+        </tr>
+        </form>
+
+        <script>
+            function display(e){
+                e.preventDefault();
+            var name=document.getElementById('one').value;
+            var id=document.getElementById('two').value;
+            var jd=document.getElementById('three').value;
+            var em=document.getElementById('four').value;
+            var mn=document.getElementById('five').value;
+            var g=document.getElementById('six').value;
+            var dob=document.getElementById('seven').value;
+            var dgn=document.getElementById('eight').value;
+            var dep=document.getElementById('nine').value;
+            var p=document.getElementById('ten').value;
+            
+            console.log(name+" "+id+" "+jd+" "+em+" "+mn+" "+g+" "+dob+" "+dgn+" "+dep+" "+p)
+            // console.log(name)
+            // console.log(name)
+            // console.log(name)
+            // console.log(name)
+            }
+        </script>
+    
+</body>
+</html>

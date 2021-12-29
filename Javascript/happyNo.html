@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var n=23;
+    
+        while(n!=1)
+        {
+            var sum=0;
+            var ld;
+           while(n>0)
+           {
+                ld= parseInt( n%10);
+                sum=sum+(ld*ld);
+                n=parseInt( n/10);
+           }
+           if(sum==1)
+           {
+                document.write("Happy number");
+                n=sum;
+           }
+           else
+           {
+               n=sum;
+           }
+
+        }
+
+    </script>
+</body>
+</html>

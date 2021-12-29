@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    var data=[{name:`harshal`,desg:'developer',yoe:20}, {name:"rahul",desg:'tester',yoe:15},
+                 {name:'saurabh',desg:'devopsEng',yoe:7},
+                  {name:`piyush`,desg:'quality',yoe:5}, {name:'nikhil',desg:'developer',yoe:20}]
+
+             var newarr=data.sort((obj1,obj2)=>{
+                 if(obj1.yoe==obj2.yoe)
+                 {
+                    if(obj1.desg==obj2.desg)
+                    {
+                        return obj1.name.localeCompare(obj2.name)
+                    }
+                    else
+                        return obj1.desg.localeCompare(obj2.desg)
+                 }
+                 else
+                    return obj1.yoe-obj2.yoe
+             })     
+             console.log(newarr)
+
+             newarr.forEach(obj=>
+             {
+                 document.write("Name:"+obj.name+"      Desg:"+obj.desg+"       YOE:"+obj.yoe+"<br>")
+             })
+    </script>
+
+
+</body>
+</html>

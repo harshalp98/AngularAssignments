@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstong</title>
+</head>
+<body>
+    <script>
+
+        var x=prompt("Enter no");
+        var num=parseInt(x);
+        var num1=num;
+        var ld=0;
+        var sum=0;
+
+        while(num>0)
+        {
+            ld=parseInt(num%10);
+            sum=sum+(ld*ld*ld);
+            num=parseInt(num/10);
+        }
+        
+        // console.log(typeof num);
+        
+        if(sum==num1){
+            console.log(sum)
+            console.log(num)
+            document.write("Armstrong");
+        }
+        else
+            document.write("Not Armstrong");
+
+    </script>
+    
+</body>
+</html>

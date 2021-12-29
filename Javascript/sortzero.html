@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort zero</title>
+</head>
+<body>
+    <script>
+
+    let arr=[11,0,11,23,0,6,0,9,0,22,0,2,0]
+
+    function fn(){
+        
+        var arr1=arr.filter(arr=>arr==0)
+        var arr2=arr.filter(arr=>arr>0)
+        return [...arr2,...arr1]
+    }
+    var x=fn()
+    document.write(x);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>occurance</title>
+</head>
+<body>
+    <script>
+        let str=`I love my india`;
+        //var arr=str.split("");
+
+        // var o=arr.filter(arr=>
+        // {
+        //     var count=0;
+        //     for()
+        // })
+        var s="e"
+        var x=s.charCodeAt(0);
+        function fn()
+        {   var count=0;
+            for(var i=0;i<str.length;i++)
+            {
+                if(str.charCodeAt(i)==x)
+                    count++;
+            }
+            return count;
+        }
+        var c=fn();
+        document.write(c);
+
+    </script>
+    
+</body>
+</html>

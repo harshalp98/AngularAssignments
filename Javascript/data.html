@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data=[{name:`piyush`,age:25}, {name:"komal",age:25}, {name:undefined,age:45},
+                  {name:`piyush`,age:45}, {name:null,age:undefined}]
+                
+        var newarr=data.filter(obj=>obj.name!=undefined && obj.age!=undefined)
+
+        newarr.forEach(obj=>
+        {
+            document.write(obj.name+" "+obj.age+"<br>")
+        })
+
+        var newarr=data.sort((obj,obj1)=>{
+            if(obj.age==obj1.age)
+            {
+                return obj.name.localeCompare(obj1.name)
+            }
+            else
+                return obj1.age-obj.age
+        })
+        console.log(newarr)
+        // function fn()
+        // {
+        //    if(obj.name==obj.name)
+        //    {
+        //        data.sort(obj=>obj.age-obj.age)
+        //    }
+           
+        //    else
+        //     {
+        //         return obj.name-obj.name
+        //     }
+        // }
+        // fn()
+
+        // function fn(data){
+        //     if(obj.name==obj.name)
+        //    {
+        //        data.sort(obj=>obj.age-obj.age)
+        //    }
+        //    else
+        //         obj.name.localCompare(obj.name)
+            
+        // }
+        // fn(data)
+
+      
+
+
+
+    </script>
+</body>
+</html>

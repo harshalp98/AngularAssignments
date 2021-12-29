@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function getData(){
+            setTimeout(()=>{
+                const empId=[101,102,103,104,105]
+                console.log(empId)
+
+                setTimeout(id=>{
+
+                    const empInfo={
+                        name :'Harsh',
+                        dept:'IT'  
+                    }
+                    console.log(`${empInfo.name} ${empInfo.dept} ${id}`)
+                },2000,empId[1]);
+
+            },1000);
+        }
+        getData()
+    </script>
+</body>
+</html>

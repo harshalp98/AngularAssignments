@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var num1=prompt("Enter value 1");
+        var num2=prompt("Enter value 2")
+        document.write("1.add"+"<br>"+"2.sub"+"<br>"+"3.mul"+"<br>"+"4.div"+"<br>");
+        // alert("entr ch");
+        var ch= prompt("enter choice");
+        var c=parseInt(ch);
+        var n1=parseInt(num1);
+        var n2=parseInt(num2);
+
+        switch(c)
+        {
+            case 1:
+                document.write(n1+n2);
+                break;
+            case 2:
+                document.write(n1-n2);
+                break;
+            case 3:
+                document.write(n1*n2);
+                break;
+            case 4:
+                document.write(n1/n2);
+                break;
+            default:
+                document.write("enter valid choice number");
+        }
+
+
+
+    </script>
+</body>
+</html>

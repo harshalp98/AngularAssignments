@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShiftNo</title>
+</head>
+<body>
+
+    <script>
+
+        var arr=[10,20,30,40,50,60];
+        var arr1=[10,20,30,40,50,60];
+
+        var n=parseInt(prompt("enter num"));
+
+        function getArr(n){
+
+            var minarr=arr.splice(0,n);
+            var maxarr=arr1.slice(n);
+            return [...maxarr,...minarr]
+        }
+        var r=getArr(n)
+        document.write(r);
+
+
+    </script>
+    
+</body>
+</html>
