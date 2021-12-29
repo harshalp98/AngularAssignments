@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="#" method="post">
+<table>
+
+<caption>Registration Form</caption>
+
+<tr>
+<th><lable>Enter Your Name:</lable></th>
+<td><input type="text" name="cname" required placeholder="Enter Your Full Name"/></td>
+</tr>
+
+<tr>
+<th><lable>Enter Email</lable></th>
+<td><input type="email" name="cemail" required placeholder="Enter Valid Email"/></td>
+</tr>
+
+<tr>
+<th><lable>Mobile No:</lable></th>
+<td><input type="tel" name="cmono" required placeholder="Enter Valid Mo.No" pattern="[0-9]{10}"/></td>
+</tr>
+
+<tr>
+<th><lable>Select Flat:</lable></th>
+<td><input type="checkbox" name="1RK"/>1RK<input type="checkbox" name="1BHK"/>1BHK<input type="checkbox" name="2BHK"/>
+2BHK<input type="checkbox" name="3BHK"/>3BHK
+</td>
+</tr>
+
+<tr>
+<th><lable>Select Color If <br/>You Want Add :</lable></th>
+<td><input type="color" name="hall" value="#ffffff"/>Hall<input type="color" name="bed" value="#ffffff"/>BED
+<input type="color" name="kitchen" value="#ffffff"/>KITCHEN
+</td>
+</tr>
+
+<tr>
+<th><lable for="">Location:</lable></th>
+<td><select name="" id="">
+	<option value="hinjewadi">Pune-Hinjewadi</option>
+	<option value="Kalyaninagar">Pune-Kalyaninagar</option>
+	<option value="Shivajinagar">Pune-Shivajinagar</option>
+	<option value="Baner">Pune-Baner</option>
+</td>
+</tr>
+
+<tr>
+<th><lable>Enter AdharNo:</lable></th>
+<td><input type="tel" name="adno" pattern="[0-9]{12}"/></td>
+</tr>
+
+<tr>
+<th><lable>Upload Doc:</lable></th>
+<td><input type="file" name="file[]" multiple accept=".pdf"/></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit"/><input type="reset"/></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="GET">
+    <table>
+            <tr>
+                <th><label>Name</label></th>
+                <td><input type="text" name="n"></td>
+            </tr>
+            <tr>
+                <th><label>Address</label></th>
+                <td><input type="text" name="ad"></td>
+            </tr>
+            <tr>
+                <th><label>Zip Code</label></th>
+                <td><input type="tel" name="Code" pattern="[0-9]{6}"></td>
+            </tr>
+            <tr>
+                <th><label>Country</label></th>
+                <td>
+                    <select name="" id="">
+                        <option value="India">India</option>
+                        <option value="russia">Russia</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="China">China</option>
+                        <option value="SriLanka">Sri Lanka</option>
+                        <option value="Turkey">Turkey</option>
+
+                    </select>
+                </td>
+            </tr>
+        
+            <tr>
+                <th><label>Gender</label></th>
+                <td><input type="radio" name="Gender">Male<input type="radio" name="Gender">Female</td>
+            </tr>
+            <tr>
+                <th><label>Preferences</label></th>
+                <td><input type="checkbox" name="ch">Red<input type="checkbox" name="ch">Green
+                    <input type="checkbox" name="ch">blue</td>
+            </tr>
+            <tr>
+                <th><label>Phone</label></th>
+                <td><input type="tel" name="ph" pattern="[0-9]{10}"></td>
+            </tr>
+            <tr>
+                <th><label>Email</label></th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th><label>Password</label></th>
+                <td><input type="password" name="pass" pattern="{6-8}"></td>
+            </tr>
+            <tr>
+                <th><label>Verify Password</label></th>
+                <td><input type="verify password" name="v"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"> <input type="reset"></td>
+            </tr>
+    </table>
+</form>
+</body>
+</html>
